@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://b10aj54ux8h22" path="res://sprites/bkground.png" id="2_kiw3p"]
 [ext_resource type="Script" uid="uid://drojtdl4svn55" path="res://scripts/marty.gd" id="3_kiw3p"]
 [ext_resource type="PackedScene" uid="uid://beq5qwuukfta2" path="res://scenes/Chester.tscn" id="4_400sg"]
+[ext_resource type="PackedScene" uid="uid://cdj7jce82fy48" path="res://scenes/LandingShadow.tscn" id="7_kiw3p"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_aug50"]
 font_size = 64
@@ -52,3 +53,5 @@ offset_top = -563.0
 offset_right = -788.0
 offset_bottom = -475.0
 label_settings = SubResource("LabelSettings_aug50")
+
+[node name="LandingShadow" parent="." unique_id=1517426982 instance=ExtResource("7_kiw3p")]
