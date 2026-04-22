@@ -3,17 +3,24 @@
 [ext_resource type="Script" uid="uid://c8nbpqown6w6k" path="res://scripts/game.gd" id="1_aug50"]
 [ext_resource type="PackedScene" uid="uid://dwi1xhktygm4l" path="res://scenes/rock.tscn" id="1_s0nni"]
 [ext_resource type="PackedScene" uid="uid://gjaotp1o68w7" path="res://scenes/Marty.tscn" id="2_aug50"]
+[ext_resource type="Texture2D" uid="uid://b10aj54ux8h22" path="res://sprites/bkground.png" id="2_kiw3p"]
 [ext_resource type="Script" uid="uid://drojtdl4svn55" path="res://scripts/marty.gd" id="3_kiw3p"]
 [ext_resource type="PackedScene" uid="uid://beq5qwuukfta2" path="res://scenes/Chester.tscn" id="4_400sg"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_aug50"]
 font_size = 64
+font_color = Color(0, 0, 0, 1)
 
 [node name="Game" type="Node2D" unique_id=1627946474]
 script = ExtResource("1_aug50")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=986185403]
 zoom = Vector2(0.5, 0.5)
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1869937814]
+position = Vector2(28, -26)
+scale = Vector2(2, 2)
+texture = ExtResource("2_kiw3p")
 
 [node name="Rock" parent="." unique_id=710935231 instance=ExtResource("1_s0nni")]
 position = Vector2(-680, 182)
@@ -40,8 +47,8 @@ gravity_scale = 0.0
 polygon = PackedVector2Array(1154, -642, -1151, -644, -1154, 648, 1152, 646, 1141, 4, 1873, -1, 1457, 946, -1380, 978, -1398, -1086, 1731, -1067, 1869, 5, 1141, 25)
 
 [node name="Label" type="Label" parent="." unique_id=103068941]
-offset_left = -1104.0
-offset_top = -602.0
-offset_right = -856.0
-offset_bottom = -523.0
+offset_left = -1036.0
+offset_top = -563.0
+offset_right = -788.0
+offset_bottom = -475.0
 label_settings = SubResource("LabelSettings_aug50")

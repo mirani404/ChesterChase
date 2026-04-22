@@ -29,6 +29,8 @@ func _ready() -> void:
 	portal_timer.timeout.connect(spawn_portals)
 	portal_timer.start()
 	# Game countdown timer
+	var my_font = load("res://sprites/CookieCrisp-L36ly.ttf")
+	$Label.add_theme_font_override("font", my_font)
 	$Label.add_theme_font_size_override("font_size", 64)
 	var game_timer = Timer.new()
 	add_child(game_timer)

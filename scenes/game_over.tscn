@@ -1,10 +1,10 @@
 [gd_scene format=3 uid="uid://bqd8sb4w5228w"]
 
-[sub_resource type="FontVariation" id="FontVariation_0nqlu"]
+[ext_resource type="FontFile" uid="uid://d1k37g27s8gij" path="res://sprites/CookieCrisp-L36ly.ttf" id="1_xeevv"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_xeevv"]
-font = SubResource("FontVariation_0nqlu")
-font_size = 48
+font = ExtResource("1_xeevv")
+font_size = 128
 font_color = Color(1, 0, 0, 1)
 
 [node name="game_over" type="Control" unique_id=1816376365]
@@ -23,10 +23,10 @@ color = Color(0, 0, 0, 1)
 
 [node name="Label" type="Label" parent="." unique_id=1947876611]
 layout_mode = 0
-offset_left = 378.0
-offset_top = 168.0
-offset_right = 766.0
-offset_bottom = 387.0
+offset_left = 291.0
+offset_top = 215.0
+offset_right = 843.0
+offset_bottom = 434.0
 text = "GAME OVER"
 label_settings = SubResource("LabelSettings_xeevv")
 horizontal_alignment = 1
